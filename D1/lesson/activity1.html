@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <title>Introduction to HTML</title>
+</head>
+
+<body>
+  <h1>Welcome to Cafe Delights</h1>
+  <p>Your cozy corner for the best coffee and treats in town</p>
+  <h1>Contact Us</h1>
+  <p>We'd love to hear from you! Please fill out the form below:</p>
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label for="name">Name</label>
+    <input type="text" name="name">
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email">
+    <br><br>
+    <label for="number">Phone Number:</label>
+    <input type="text" placeholder="123-456-7890">
+    <br><br>
+    <label for="birthday">Date of Birth:</label>
+    <input type="date" name="birthday">
+  </fieldset>
+
+  <fieldset>
+    <legend>Visit information</legend>
+    <label for="visit">Preferred Visit Date:</label>
+    <input type="date" name="visit">
+    <br><br>
+    <label for="time">Preferred Time:</label>
+    <input type="time">
+    <br><br>
+    <label for="">Are you a returning customer?</label>
+    <br>
+    <input type="radio" id="yes" name="visitor" value="yes">
+    <label for="yes">Yes</label>
+    <br>
+    <input type="radio" id="no" name="visitor" value="no">
+    <label for="no">No</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Order Preferences</legend>
+    <label for="drink">Favorite Drink:</label>
+    <select name="drink" id="drink">
+      <option value="latte">Latte</option>
+      <option value="soda">Soda</option>
+      <option value="water">Water</option>
+    </select>
+    <br><br>
+    <p>Select your dietary preferences:</p>
+    <input type="checkbox" id="vegan" name="diet" value="vegan">
+    <label for="vegan">Vegan</label><br>
+    <input type="checkbox" id="vegetarian" name="diet" value="vegetarian">
+    <label for="vegetarian">Vegetarian</label><br>
+    <input type="checkbox" id="gluten-free" name="diet" value="gluten-free">
+    <label for="gluten-free">Gluten-Free</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Feedback</legend>
+    <label for="vol">Rate your last visit(1-5):</label>
+    <input type="range" id="vol" name="vol" min="1" max="5">
+    <br><br>
+    <label>Additional Comments</label>
+    <br>
+    <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Tell us about your experience...">
+    </textarea>
+    <br><br>
+    <label for="newsletter">Would you like to receive our newsletter?</label>
+    <input type="checkbox" id="newsletter" name="newsletter">
+
+  </fieldset>
+  <button>Submit</button>
+
+</body>
+
+</html>
