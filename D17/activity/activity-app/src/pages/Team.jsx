@@ -1,6 +1,6 @@
 import React from 'react';
 import { teamMembers } from '../team-data/data';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 const Team = () => {
   return (
@@ -13,6 +13,7 @@ const Team = () => {
           </li>
         ))}
       </ul>
+      <Outlet />
     </div>
   );
 };
