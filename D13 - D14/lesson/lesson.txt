@@ -1,0 +1,60 @@
+Aggregation Pipilines
+
+Find the Total Quanity Ordered by Each Customer
+Query:
+db.orders.aggregate([
+  { $group: {"_id": "$customerId", "totalQuantity": {"$sum" : "$quantity"}}}
+])
+Results:
+{
+  _id: 2,
+  totalQuantity: 3
+}
+{
+  _id: 3,
+  totalQuantity: 3
+}
+{
+  _id: 1,
+  totalQuantity: 3
+}
+
+Find the average price per cart
+Query:
+[
+    { "$group": { "_id": "$category", "averagePrice": { "$avg": "$price" } } }
+]
+Results:
+[ { '$group': { _id: '$category', averagePrice: [Object] } } ]
+
+
+======================
+
+npm init -y 
+
+istall the required dependencies by running the following command:
+
+npm install express mongoose dotenv
+
+Actual endpoints for managing the todo items in the averagePrice
+1.  Create a new todo item:
+    Endpoint: POST /todos
+
+2.  Retrieve all todo items:
+    Endpoint: GET todos
+
+3. Retrieve a specific todo item:
+    Endpoint: GET /todos/{id}
+
+4.  Update a specific todo item:
+    Endpoint: PUT /todos/{id}
+
+5.  
+
+
+==========================
+mkdir routes
+mkdir controllers
+
+Enter Title: Tast 1
+Enter Description: Complete my cleaning chores
